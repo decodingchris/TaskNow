@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="tasknow",
-    version="1.0.0",
+    version="1.0.3",
     description="A super simple terminal to-do app that helps you focus on one task at a time.",
     long_description="""# TaskNow
 
