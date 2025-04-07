@@ -351,3 +351,22 @@ def test_cli_exception_handling(capsys):
     captured = capsys.readouterr()
     combined_output = captured.out + captured.err
     assert "Error: Simulated error" in combined_output
+
+
+def test_cli_default_to_show(capsys, tmp_path):
+    """Test CLI defaults to showing current task when no command is given."""
+    # Patch TASKS_FILE to use a temp file
+    temp_file = tmp_path / "tasks.json"
+    with patch('main.TASKS_FILE', str(temp_file)):
+        from main import TaskManager, main as cli_main
+
+        # Add a task so there is something to show
+        manager = TaskManager()
+        manager.add_task("Default show task")
+
+        # Simulate running CLI with no arguments
+        with patch('sys.argv', ['main.py']):
+            cli_main()
+
+        captured = capsys.readouterr()
+        assert "Current task: Default show task" in captured.out

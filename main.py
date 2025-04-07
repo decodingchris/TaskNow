@@ -151,8 +151,11 @@ class TaskManager:
 
 def main() -> None:
     """Handle CLI commands and execute appropriate actions."""
-    parser = argparse.ArgumentParser(description='TaskNow - Minimalist Task Manager')
-    subparsers = parser.add_subparsers(dest='command', required=True)
+    parser = argparse.ArgumentParser(
+        description='TaskNow - Minimalist Task Manager',
+        epilog='If no command is provided, defaults to showing the current task.'
+    )
+    subparsers = parser.add_subparsers(dest='command')
 
     # Show current task
     subparsers.add_parser('show', help='Show current task')
@@ -184,6 +187,8 @@ def main() -> None:
     edit_parser.add_argument('new_description', nargs='*', help='New task description')
 
     args = parser.parse_args()
+    if args.command is None:
+        args.command = 'show'
     manager = TaskManager()
 
     try:
