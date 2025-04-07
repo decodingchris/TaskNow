@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="tasknow",
-    version="1.0.3",
+    version="1.0.4",
     description="A super simple terminal to-do app that helps you focus on one task at a time.",
     long_description="""# TaskNow
 
@@ -14,7 +14,7 @@ A super simple terminal to-do app that helps you focus on one task at a time.
 - Add, complete, and manage tasks easily from the terminal
 - No accounts, no clutter — just your tasks
 
-## Quick start
+## Commands
 
 Add a task:
 ```bash
@@ -36,7 +36,25 @@ List all tasks:
 tasknow list
 ```
 
-For more commands and details, see the full documentation.
+Remove a task:
+```bash
+tasknow remove <id>
+```
+
+Show completed tasks:
+```bash
+tasknow completed
+```
+
+Un-complete a task:
+```bash
+tasknow undone <id>
+```
+
+Edit a task:
+```bash
+tasknow edit <id> "New description"
+```
 
 ---
 
