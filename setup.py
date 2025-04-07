@@ -3,32 +3,44 @@ from setuptools import setup, find_packages
 setup(
     name="tasknow",
     version="1.0.0",
-    description="Minimalist terminal task manager with single-task focus",
-    long_description="""# TaskNow - Product Context
+    description="A super simple terminal to-do app that helps you focus on one task at a time.",
+    long_description="""# TaskNow
 
-## Vision
+A super simple terminal to-do app that helps you focus on one task at a time.
 
-A minimalist terminal task manager that helps users focus on one task at a time while still providing full task management capabilities.
+## Why use TaskNow?
 
-## Core Features
+- Stay focused by seeing just your current task
+- Add, complete, and manage tasks easily from the terminal
+- No accounts, no clutter — just your tasks
 
-- Single-task focus by default
-- Simple command-based interface
-- Full task list visibility when needed
-- Completion tracking
+## Quick start
 
-## Technical Foundation
+Add a task:
+```bash
+tasknow add "Write report"
+```
 
-- Python implementation
-- JSON data storage
-- Ubuntu/Linux compatible
+See your current task:
+```bash
+tasknow
+```
 
-## User Workflow
+Mark it done:
+```bash
+tasknow done
+```
 
-1. User adds tasks with `tasknow add`
-2. Views current task with `tasknow`
-3. Marks completion with `tasknow done`
-4. Manages full list with `tasknow list`/`tasknow remove` when needed
+List all tasks:
+```bash
+tasknow list
+```
+
+For more commands and details, see the full documentation.
+
+---
+
+MIT License
 """,
     long_description_content_type="text/markdown",
     author="Decoding Chris",
