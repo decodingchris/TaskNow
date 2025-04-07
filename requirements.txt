@@ -1,0 +1,10 @@
+# Test requirements for TaskNow (April 2025 verified versions)
+pytest==8.3.5
+pytest-cov==6.1.1
+
+# For development flexibility (minimum versions):
+# pytest>=8.3.5
+# pytest-cov>=6.1.1
+
+# To freeze exact versions:
+# pip freeze > requirements-frozen.txt
