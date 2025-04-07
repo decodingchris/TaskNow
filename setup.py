@@ -34,7 +34,7 @@ A minimalist terminal task manager that helps users focus on one task at a time 
     author="Decoding Chris",
     license="MIT",
     py_modules=["main"],
-    python_requires=">=3.7",
+    python_requires=">=3.10",
     install_requires=[],
     entry_points={
         "console_scripts": [
@@ -43,7 +43,6 @@ A minimalist terminal task manager that helps users focus on one task at a time 
     },
     classifiers=[
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
         "License :: OSI Approved :: MIT License",
         "Operating System :: POSIX :: Linux",
         "Intended Audience :: End Users/Desktop",

@@ -27,7 +27,7 @@ This will install TaskNow and make the `tasknow` command available globally.
 
 ### Requirements
 
-- Python 3.7 or higher
+- Python 3.10 or higher
 - `setuptools` (installed automatically with pip)
 
 ## Usage
