@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="tasknow",
-    version="1.0.4",
+    version="1.0.5",
     description="A super simple terminal to-do app that helps you focus on one task at a time.",
     long_description="""# TaskNow
 
@@ -13,6 +13,14 @@ A super simple terminal to-do app that helps you focus on one task at a time.
 - Stay focused by seeing just your current task
 - Add, complete, and manage tasks easily from the terminal
 - No accounts, no clutter — just your tasks
+
+## Installation
+
+You can install TaskNow directly from PyPI:
+
+```bash
+pip install tasknow
+```
 
 ## Commands
 
