@@ -1,6 +1,6 @@
 # TaskNow
 
-A super simple terminal to-do app that helps you focus on one task at a time.
+A terminal to-do app that helps you focus on one task at a time.
 
 [![PyPI version](https://img.shields.io/pypi/v/tasknow.svg)](https://pypi.org/project/tasknow/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

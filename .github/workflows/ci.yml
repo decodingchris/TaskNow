@@ -1,6 +1,6 @@
 # GitHub Actions CI workflow for TaskNow CLI
 # This workflow runs tests, checks coverage, and builds the package on every push and pull request.
-# Compatible with Python 3.7+
+# Compatible with Python 3.10+
 
 name: CI for TaskNow CLI
 

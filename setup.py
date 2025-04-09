@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name="tasknow",
-    version="1.0.5",
-    description="A super simple terminal to-do app that helps you focus on one task at a time.",
+    version="1.0.6",
+    description="A terminal to-do app that helps you focus on one task at a time.",
     long_description="""# TaskNow
 
-A super simple terminal to-do app that helps you focus on one task at a time.
+A terminal to-do app that helps you focus on one task at a time.
 
 ## Why use TaskNow?
 
