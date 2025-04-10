@@ -11,7 +11,6 @@ authors = [
 ]
 license = "MIT"
 readme = "README.md"
-py_modules = ["main"]
 requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -31,3 +30,6 @@ tasknow = "main:main"
 [project.urls]
 Homepage = "https://github.com/decodingchris/TaskNow"
 Issues = "https://github.com/decodingchris/TaskNow/issues"
+
+[tool.setuptools]
+py-modules = ["main"]
