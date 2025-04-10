@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tasknow"
+version = "1.0.8"
+description = "A terminal to-do app that helps you focus on one task at a time."
+authors = [
+    { name = "Decoding Chris" }
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: End Users/Desktop",
+    "Environment :: Console",
+    "Topic :: Utilities"
+]
+
+[project.scripts]
+tasknow = "main:main"
+
+[project.urls]
+Homepage = "https://github.com/decodingchris/TaskNow"
+Issues = "https://github.com/decodingchris/TaskNow/issues"

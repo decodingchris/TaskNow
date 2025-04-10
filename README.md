@@ -2,9 +2,6 @@
 
 A terminal to-do app that helps you focus on one task at a time.
 
-[![PyPI version](https://img.shields.io/pypi/v/tasknow.svg)](https://pypi.org/project/tasknow/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## Why use TaskNow?
 
 - Stay focused by seeing just your current task
@@ -79,12 +76,6 @@ Show help:
 ```bash
 tasknow help
 ```
-
-## Links
-
-- **PyPI:** [https://pypi.org/project/tasknow/](https://pypi.org/project/tasknow/)
-- **Source Code:** [https://github.com/decodingchris/tasknow](https://github.com/decodingchris/tasknow)
-- **Issue Tracker:** [https://github.com/decodingchris/tasknow/issues](https://github.com/decodingchris/tasknow/issues)
 
 ## License
 
