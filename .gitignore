@@ -181,3 +181,7 @@ memory-bank/
 
 # VS Code
 .vscode/
+
+# GitGhost
+.gitghost_private/
+.gitghostinclude
