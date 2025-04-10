@@ -370,3 +370,17 @@ def test_cli_default_to_show(capsys, tmp_path):
 
         captured = capsys.readouterr()
         assert "Current task: Default show task" in captured.out
+
+
+def test_cli_help_command(capsys):
+    """Test the help command prints help message."""
+    from main import main as cli_main
+
+    # Simulate running 'tasknow help'
+    with patch('sys.argv', ['main.py', 'help']):
+        cli_main()
+
+    captured = capsys.readouterr()
+    assert "usage: main.py" in captured.out
+    assert "Show current task" in captured.out
+    assert "help" in captured.out

@@ -5,24 +5,16 @@ A terminal to-do app that helps you focus on one task at a time.
 [![PyPI version](https://img.shields.io/pypi/v/tasknow.svg)](https://pypi.org/project/tasknow/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
----
-
 ## Why use TaskNow?
 
-- **Stay focused:** See just your current task by default
-- **Minimalist & distraction-free:** No accounts, no clutter — just your tasks
-- **Full control:** Add, complete, edit, and manage tasks easily from the terminal
-- **Simple commands:** Intuitive CLI interface
-- **Lightweight:** Python-based with JSON storage, works seamlessly on Linux
-
----
+- Stay focused by seeing just your current task
+- Add, complete, and manage tasks easily from the terminal
+- No accounts, no clutter — just your tasks
 
 ## Requirements
 
 - **Python 3.10 or higher**
 - Compatible with Ubuntu/Linux systems
-
----
 
 ## Installation
 
@@ -32,9 +24,7 @@ Install TaskNow directly from PyPI:
 pip install tasknow
 ```
 
----
-
-## Quick Start
+## Commands
 
 Add a task:
 
@@ -57,13 +47,13 @@ tasknow done
 List all tasks:
 
 ```bash
-tasknow list
+tasknow list # Also shows each task id
 ```
 
 Remove a task:
 
 ```bash
-tasknow remove 3
+tasknow remove 2 # Remove task with id: 2
 ```
 
 Show completed tasks:
@@ -75,24 +65,20 @@ tasknow completed
 Un-complete a task:
 
 ```bash
-tasknow undone 3
+tasknow undone 3 # Un-complete task with id: 3
 ```
 
 Edit a task:
 
 ```bash
-tasknow edit 2 "New task description"
+tasknow edit 4 "New task description" # Edit task with id: 4
 ```
 
----
-
-For more commands and details, see the full documentation or run:
+Show help:
 
 ```bash
-tasknow --help
+tasknow help
 ```
-
----
 
 ## Links
 
@@ -100,12 +86,6 @@ tasknow --help
 - **Source Code:** [https://github.com/decodingchris/tasknow](https://github.com/decodingchris/tasknow)
 - **Issue Tracker:** [https://github.com/decodingchris/tasknow/issues](https://github.com/decodingchris/tasknow/issues)
 
----
-
 ## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](https://opensource.org/licenses/MIT) file for details.
-
----
-
-MIT License © Decoding Chris

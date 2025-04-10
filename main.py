@@ -156,6 +156,9 @@ def main() -> None:
         epilog='If no command is provided, defaults to showing the current task.'
     )
     subparsers = parser.add_subparsers(dest='command')
+    
+    # Help command
+    subparsers.add_parser('help', help='Show help message')
 
     # Show current task
     subparsers.add_parser('show', help='Show current task')
@@ -233,6 +236,8 @@ def main() -> None:
             manager.remove_task(args.id)
             print(f"Removed task {args.id}")
 
+        elif args.command == 'help':
+            parser.print_help()
         elif args.command == 'undone':
             manager.reopen_task(args.id)
             print(f"Marked task {args.id} as undone")
